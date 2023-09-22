@@ -1,0 +1,365 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+/* menu */
+.kepala {
+    padding: 1px 0 1px 0;
+    background-color: #202125;
+}
+
+.container {
+    display: flex;
+    width: 85%;
+    margin-left: 10px;
+    line-height: 55px;
+}
+
+
+nav{
+    height: 70px;
+    background: #393939;
+}
+
+nav ul{
+    float: right;
+    margin-right: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    color: white;
+    display: block;
+    line-height: 70px;
+    font-size: 20px;
+    padding: 0 15px 0 15px;
+}
+
+nav ul li a:hover {
+    color: #C0C302;
+}
+
+nav ul ul{
+    position: absolute;
+    border-top: 2px solid #FFC7C7;
+    opacity: 0;
+}
+
+nav ul li:hover > ul{
+    top: 125px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+nav ul ul li{
+    width: 130px;
+    position: relative;
+    display: list-item;
+}
+
+nav ul ul li a{
+    line-height: 55px;
+}
+
+/* berita1 */
+
+.land {
+    background: #342F2F;
+    padding: 20px 0px 40px 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 10px solid black;
+}
+
+.tulis { 
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.tulis h2 {
+    color: white;
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.satu {
+    margin-left: 100px;
+    margin-right: 100px;
+    background: #342F2F;
+    padding: 50px 0px 50px 0px;
+}
+
+.down {
+    display: flex;
+}
+
+.main {
+    margin: 7% 0 0 37%;
+    position: relative;
+    width: 25%;
+}
+  
+.image {
+    display: block;
+    width: 370px;
+    height: 450px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-left: -105px;
+}
+  
+.buram {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    width: 370px;
+    height: 0;
+    margin-left: -105px;
+    transition: .7.1s ease;
+}
+  
+.main:hover .buram {
+    height: 100%;
+}
+
+.kolompp {
+    margin-top: 300px;
+}
+  
+.kolompp h2 {
+    text-align: left;
+    color: #fff;
+    font-size: 1.2vw;
+    margin-left: 30px;
+    width: 80%;
+    letter-spacing: 5px;
+    line-height: 1.5em;
+}
+
+.kolom {
+    background: #D9D9D9;
+    padding: 1px 0px 50px 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 370px;
+    height: 10px;
+    margin-left: 50px;
+    text-align: justify;
+}
+
+.kolom h2 {
+    margin-top: 15px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.satu1 {
+    margin-left: 100px;
+    margin-right: 100px;
+    background: #342F2F;
+    padding: 0px 0px 50px 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+section {
+    padding: 50px 0;
+}
+
+/* footer */
+
+.belakang {
+    margin-top: 150px;
+}
+
+.wrapp{
+	max-width: 1200px;
+	margin:auto;
+}
+
+.isi{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul{
+	list-style: none;
+}
+
+.footer{
+	background-color: #D9D9D9;
+    padding: 50px 0;
+}
+
+.foot1{
+   width: 25%;
+   padding: 0 50px;
+}
+
+.foot1 img {
+	width: 55%;
+}
+
+.foot1 ul li a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	margin-bottom: 5%;
+	font-size: 15px;
+}
+
+.foot1 ul li a:hover{
+	color: BLACK;
+    font-style: bold;
+    font-weight: bolder;
+}
+
+.foot1 .linkmedsos img{
+	height: 35px;
+	width: 35px;
+	display: inline-block;
+	margin:0 8px 8px 0;
+	text-align: center;
+	color: #ffffff;
+}
+
+.foot1 .linkmedsos a{
+	display: inline-block;
+}
+
+#copyright {
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    .kepala {
+        background-color: #202125;
+    }
+
+    nav ul {
+        margin: 0 auto;
+    }
+
+    nav ul li a {
+        font-size: 80%;
+        padding: 0 8px 0 8px;
+        color: white;
+    }
+
+    .tanda11 {
+        background: #342F2F;
+        padding: 20px 0px 40px 0px;
+        margin: 0 auto;
+        height: 20px;
+        width: 90%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom: 10px solid black;
+    }
+
+    .satu {
+        margin: 0 auto;
+        width: 90%;
+        background: #342F2F;
+        padding: 30px 0px 30px 0px;
+    }
+
+    .satu1 {
+        margin: 0 auto;
+        background: #342F2F;
+        width: 90%;
+        padding: 0px 0px 50px 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .image {
+        display: block;
+        width: 300%;
+        height: 60%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-left: -97%;
+    }
+      
+    .buram {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        overflow: hidden;
+        width: 300%;
+        height: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-left: -97%;
+        transition: .5s ease;
+    }
+
+    .kolompp {
+        margin-top: 10%;
+    }
+      
+    .kolompp h2 {
+        text-align: left;
+        color: #fff;
+        font-size: 60%;
+        margin-left: 3px;
+        width: 80%;
+        letter-spacing: 1px;
+    }
+    
+    .kolom {
+        background: #D9D9D9;
+        padding: 1px 0px 30px 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 75%;
+        height: 10%;
+        margin-left: 13%;
+        text-align: justify;
+    }
+    
+    .kolom h2 {
+        font-size: 60%;
+        margin-bottom: -40%;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .foot1 {
+    	width: 50%;
+    	margin-bottom: 28px;
+	}
+}
+
+

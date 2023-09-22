@@ -1,0 +1,744 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+.head{
+    padding: 1px 0 1px 0;
+    background-color: #202125;
+}
+
+.container {
+    display: flex;
+    width: 85%;
+    margin-left: 10px;
+    line-height: 55px;
+}
+
+
+nav{
+    height: 70px;
+    background: #393939;
+}
+
+nav ul{
+    float: right;
+    margin-right: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    color: white;
+    display: block;
+    line-height: 70px;
+    font-size: 20px;
+    padding: 0 15px 0 15px;
+}
+
+nav ul li a:hover {
+    color: #C0C302;
+}
+
+nav ul ul{
+    position: absolute;
+    border-top: 2px solid #FFC7C7;
+    opacity: 0;
+}
+
+nav ul li:hover > ul{
+    top: 125px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+nav ul ul li{
+    width: 130px;
+    position: relative;
+    display: list-item;
+}
+
+nav ul ul li a{
+    line-height: 55px;
+}
+
+
+/* banner */
+
+.banner {
+    display: flex;
+}
+  
+.bayang {
+    margin: 0 0 0 100px;
+    position: relative;
+    width: 25%;
+}
+  
+.pic {
+    display: block;
+    margin-left: -105px;
+    width: 900px;
+    height: 500px;
+}
+  
+.naik {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.644);
+    overflow: hidden;
+    margin-left: -105px;
+    transition: .6s ease;
+    width: 900px;
+    height: 0;
+}
+  
+.bayang:hover .naik {
+    height: 60%;
+}
+  
+.kolom11 {
+    margin-top: 150px;
+}
+  
+.kolom11 h2 {
+    text-align: left;
+    color: #fff;
+    font-size: 25px;
+    margin-left: 30px;
+}
+  
+  
+.bayang2 {
+    margin: 0 0 0 100px;
+    position: relative;
+    width: 25%;
+}
+  
+.pic2 {
+    display: block;
+    margin-left: -100px;
+    width: 500px;
+    height: 500px;
+}
+  
+.naik2 {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.644);
+    overflow: hidden;
+    margin-left: -105px;
+    transition: .6s ease;
+    width: 500px;
+    height: 0;
+}
+  
+.bayang2:hover .naik2 {
+    height: 60%;
+}
+  
+.kolom2 {
+    margin-top: 150px;
+}
+  
+.kolom2 h2 {
+    text-align: left;
+    color: #fff;
+    font-size: 25px;
+    margin-left: 30px;
+}
+  
+.bayang3 {
+    margin: 0 0 0 100px;
+    position: relative;
+    width: 25%;
+}
+  
+.banner3 {
+    display: flex;
+    flex-direction: column;
+}
+  
+.banner31 img {
+    width: 503px;
+    height: 250px;
+    margin-bottom: -4px;
+}
+  
+.banner32 img {
+    width: 503px;
+    height: 254px;
+}
+  
+.pic3 {
+    display: block;
+    margin-left: -100px;
+}
+  
+.naik3 {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.644);
+    overflow: hidden;
+    margin-left: -105px;
+    transition: .6s ease;
+    width: 503px;
+    height: 0;
+}
+  
+.bayang3:hover .naik3 {
+    height: 65%;
+}
+  
+.kolom3 {
+    margin-top: 60px;
+}
+  
+.kolom3 h2 {
+    text-align: left;
+    color: #fff;
+    font-size: 25px;
+    margin-left: 30px;
+}
+  
+.kolom11 button {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;    
+    border-radius: 5px;
+    padding: 9px;
+    margin-left: 30px;
+    margin-top: 15px;
+    width: 250px;
+    color: #fff;
+    font-weight: bolder;
+    background: #ffa12c;
+}
+
+.kolom2 button {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 30px;
+    border-radius: 5px;
+    padding: 9px;
+    margin-left: 30px;
+    margin-top: 15px;
+    width: 270px;
+    color: #fff;
+    font-weight: bolder;
+    background: #ffa12c;
+}
+
+.kolom3 button {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 30px;
+    border-radius: 5px;
+    padding: 9px;
+    margin-left: 30px;
+    margin-top: 10px;
+    width: 270px;
+    color: #fff;
+    font-weight: bolder;
+    background: #ffa12c;
+}
+
+/* LIVE */
+
+.tulis { 
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.tulis p {
+    color: #fff;
+    text-align: center; 
+}
+
+.tulis H2 {
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+.satu {
+    margin-top: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: -150px;
+    border-radius: 20px;
+    background: #342F2F;
+    padding: 50px 0px 50px 0px;
+}
+
+.down {
+    display: flex;
+}
+
+
+.gambar img {
+    width: 300px;
+    height: 400px;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+
+.la a { 
+    color: #fff;
+    font-style: bold;
+    font-style: italic;
+    font-size: 40px;
+    margin-left: 175px;
+}
+.la a:hover {
+    color: #FCE300;
+    font-style: bold;
+    font-style: italic;
+    font-size: 40px;
+}
+
+/* daftar */
+
+
+button {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 460px;
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 700px;
+    border-radius: 4px;
+    color: white;
+    font-size: 1vw;
+    cursor: pointer;
+    background: black;
+    border: 4px solid #E2DACE;
+}
+
+
+.main {
+    margin: 8% 0 0 37%;
+    position: relative;
+    width: 25%;
+}
+  
+.image {
+    display: block;
+    margin-left: -1000px;
+    z-index: 38;
+    width: 2195px;
+    height: 1000px;
+}
+  
+.buram{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.438);
+    overflow: hidden;
+    width: 1895px;
+    height: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-left: -700px;
+    transition: .6s ease;
+}
+  
+.main:hover .buram {
+    height: 500px;
+}
+
+.kolom {
+    margin-top: 0px;
+}
+  
+.kolom h2 {
+    text-align: left;
+    color: #E2DACE;
+    font-size: 80px;
+    margin-left: 30px;
+    width: 80%;
+    letter-spacing: 6px;
+}
+
+.kolom h1 {
+    text-align: center;
+    color: #E2DACE;
+    font-size: 20px;
+    width: 80%;
+    letter-spacing: 6px;
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+/* footer */
+
+.belakang {
+    margin-top: 150px;
+}
+
+.wrapp{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.isi{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul{
+	list-style: none;
+}
+
+.footer{
+	background-color: #D9D9D9;
+    padding: 50px 0;
+}
+
+.foot1{
+   width: 25%;
+   padding: 0 50px;
+}
+
+.foot1 img {
+	width: 55%;
+}
+
+.foot1 ul li a{
+	display: block;
+	color: black;
+	margin-bottom: 5%;
+	font-size: 15px;
+    text-decoration: none;
+}
+
+.foot1 ul li a:hover{
+	color: BLACK;
+    font-style: bold;
+    font-weight: bolder;
+}
+
+.foot1 .linkmedsos img{
+	display: inline-block;
+	margin:0 8px 8px 0;
+	text-align: center;
+	color: #ffffff;
+    height: 35px;
+	width: 35px;
+}
+
+.foot1 .linkmedsos a{
+	display: inline-block;
+}
+
+#copyright {
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .kepala {
+        background-color: #202125;
+    }
+
+    nav ul {
+        margin: 0 auto;
+    }
+
+    nav ul li a {
+        font-size: 80%;
+        padding: 0 8px 0 8px;
+        color: white;
+    }
+
+    .pic {
+        display: block;
+        margin-left: -105px;
+        width: 410%;
+        height: 250px;
+    }
+
+    .pic2 {
+        display: block;
+        margin-left: -100px;
+        width: 426%;
+        height: 250px;
+    }
+
+    .banner31 img {
+        width: 400%;
+        height: 125px;
+    }
+      
+    .banner32 img {
+        width: 400%;
+        height: 125px;
+        margin-top: 4px;
+    }
+
+    .naik {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.678);
+        overflow: hidden;
+        width: 410%;
+        height: 0;
+        margin-left: -105px;
+        transition: .5s ease;
+    }
+
+    .kolom11 {
+        margin-top: 50px;
+    }
+
+    .kolom11 h2 {
+        text-align: left;
+        color: #fff;
+        font-size: 100%;
+        margin-left: 30px;
+    }
+
+    .naik2 {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.678);
+        overflow: hidden;
+        width: 426%;
+        height: 0;
+        margin-left: -100px;
+        transition: .6s ease;
+    }
+
+    .kolom2 {
+        margin-top: 50px;
+    }
+
+    .kolom2 h2 {
+        text-align: left;
+        color: #fff;
+        font-size: 70%;
+        margin-left: 30px;
+    }
+
+    .naik3 {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.678);
+        overflow: hidden;
+        width: 400%;
+        height: 0;
+        margin-left: -105px;
+        transition: .6s ease;
+    }
+
+    .bayang3:hover .naik3 {
+        height: 75%;
+    }
+
+    .kolom3 {
+        margin-top: 10px;
+    }
+    
+    .kolom3 h2 {
+        text-align: left;
+        color: #fff;
+        font-size: 70%;
+        margin-left: 30px;
+    }
+
+    .kolom11 button {
+        border: none;
+        outline: none;
+        font-size: 10px;
+        cursor: pointer;    
+        border-radius: 5px;
+        margin-left: 30px;
+        margin-top: 15px;
+        width: 50%;
+        color: #fff;
+        font-weight: bolder;
+        background: #ffa12c;
+    }
+
+    .kolom2 button {
+        border: none;
+        outline: none;
+        font-size: 45%;
+        cursor: pointer;    
+        border-radius: 5px;
+        margin-left: 30px;
+        margin-top: 15px;
+        width: 60%;
+        color: #fff;
+        font-weight: bolder;
+        background: #ffa12c;
+    }
+
+    .kolom3 button {
+        border: none;
+        outline: none;
+        font-size: 45%;
+        cursor: pointer;    
+        border-radius: 5px;
+        margin-left: 30px;
+        margin-top: 15px;
+        width: 60%;
+        color: #fff;
+        font-weight: bolder;
+        background: #ffa12c;
+    }
+
+    .banner {
+        display: flex;
+        margin-bottom: 100px;
+    }
+
+    /* live */
+
+    .satu {
+        margin: 0 auto;
+        width: 80%;
+        background: #342F2F;
+        padding: 50px 0px 50px 0px;
+    }
+
+    .gambar img {
+        width: 90%;
+        height: 200px;
+        margin-left: 8px;
+        
+    }
+
+    .la a { 
+        color: #fff;
+        font-style: bold;
+        font-style: italic;
+        font-size: 100%;
+        margin-left: 35%;
+    }
+    .la a:hover {
+        color: #FCE300;
+        font-style: bold;
+        font-style: italic;
+        font-size: 100%;
+    }
+
+    /* daftar */
+
+    .image {
+        display: block;
+        width: 402%;
+        height: 600px;
+        margin-left: -150%;
+        z-index: 40;
+    }
+
+    .buram{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.438);
+        overflow: hidden;
+        width: 400%;
+        height: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-left: -150%;
+        transition: .5s ease;
+    }
+
+    .kolom {
+        margin-top: px;
+    }
+
+    .main:hover .buram {
+        height: 250px;
+    }
+
+    .kolom h2 {
+        text-align: left;
+        color: #E2DACE;
+        font-size: 200%;
+        margin-left: 4%;
+        width: 80%;
+        letter-spacing: 6px;
+    }
+    
+    .kolom h1 {
+        text-align: left;
+        color: #E2DACE;
+        font-size: 55%;
+        width: 80%;
+        letter-spacing: 2px;
+        margin-top: 50px;
+        margin-left: 4%;
+    }
+
+    button {
+        border: none;
+        outline: none;
+        padding: 8px;
+        width: 30%;
+        height: 50px;
+        margin-top: 10px;
+        margin-left: 4%;
+        border-radius: 4px;
+        color: white;
+        font-size: 100%;
+        cursor: pointer;
+        background: black;
+        border: 4px solid #E2DACE;
+    }
+
+    /* footer */
+
+    .foot1 {
+    	width: 50%;
+    	margin-bottom: 28px;
+	} 
+}
+
+
+
+
+
+

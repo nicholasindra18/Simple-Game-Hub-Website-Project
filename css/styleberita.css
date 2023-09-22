@@ -1,0 +1,313 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+/* menu */
+.kepala {
+    padding: 1px 0 1px 0;
+    background-color: #202125;
+}
+
+.container {
+    display: flex;
+    width: 85%;
+    margin-left: 10px;
+    line-height: 55px;
+}
+
+
+nav{
+    height: 70px;
+    background: #393939;
+}
+
+nav ul{
+    float: right;
+    margin-right: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    color: white;
+    display: block;
+    line-height: 70px;
+    font-size: 20px;
+    padding: 0 15px 0 15px;
+}
+
+nav ul li a:hover {
+    color: #C0C302;
+}
+
+nav ul ul{
+    position: absolute;
+    border-top: 2px solid #FFC7C7;
+    opacity: 0;
+}
+
+nav ul li:hover > ul{
+    top: 125px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+nav ul ul li{
+    width: 130px;
+    position: relative;
+    display: list-item;
+}
+
+nav ul ul li a{
+    line-height: 55px;
+}
+
+/* berita1 */
+
+.cover {
+    background: #342F2F;
+    padding: 20px 0px 40px 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 20px;
+    border-bottom: 10px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.tulis { 
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.tulis H2 {
+    color: white;
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.satu {
+    margin-left: 100px;
+    margin-right: 100px;
+    background: #342F2F;
+    padding: 50px 0px 50px 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.down {
+    display: flex;
+}
+
+.la {
+    display: flex;
+}
+
+.down img {
+    width: 330px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-left: 77px;
+}
+
+.kolom {
+    padding: 20px 0px 50px 0px;
+    background: #E2DACE;
+    width: 330px;
+    height: 270px;
+    margin-left: 77px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: justify;
+}
+
+.kolom h2 {
+    margin-left: 10px;
+    font-style: italic;
+}
+
+.kolom p {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    font-style: bold;
+    font-size: 20px;
+}
+
+section {
+    padding: 50px 0;
+}
+
+/* footer */
+
+.belakang {
+    margin-top: 150px;
+}
+
+.wrapp{
+	max-width: 1200px;
+	margin:auto;
+}
+
+.isi{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul{
+	list-style: none;
+}
+
+.footer{
+	background-color: #D9D9D9;
+    padding: 50px 0;
+}
+
+.foot1{
+   width: 25%;
+   padding: 0 50px;
+}
+
+.foot1 img {
+	width: 55%;
+}
+
+.foot1 ul li a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	margin-bottom: 5%;
+	font-size: 15px;
+}
+
+.foot1 ul li a:hover{
+	color: BLACK;
+    font-style: bold;
+    font-weight: bolder;
+}
+
+.foot1 .linkmedsos img{
+	height: 35px;
+	width: 35px;
+	display: inline-block;
+	margin:0 8px 8px 0;
+	text-align: center;
+	color: #ffffff;
+}
+
+.foot1 .linkmedsos a{
+	display: inline-block;
+}
+
+#copyright {
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    .kepala {
+        background-color: #202125;
+    }
+
+    nav ul {
+        margin: 0 auto;
+    }
+
+    nav ul li a {
+        font-size: 80%;
+        padding: 0 8px 0 8px;
+        color: white;
+    }
+
+    /* berita */
+
+    .cover {
+        background: #313131;
+        padding: 20px 0px 40px 0px;
+        width: 80%;
+        height: 20px;
+        margin: 0 auto;
+        border-bottom: 10px solid black;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .satu {
+        margin: 0 auto;
+        width: 80%;
+        background: #342F2F;
+        padding: 50px 0px 50px 0px;
+    }
+
+    .la {
+        flex-direction: column;
+    }
+
+    .down img {
+        width: 80%;
+        height: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-left: 10%;
+    }
+    
+    .kolom {
+        padding: 20px 0px 0px 0px;
+        background: #E2DACE;
+        width: 80%;
+        margin-left: 10%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-align: justify;
+        margin-bottom: 10%;
+    }
+
+    .kolom h2 {
+        margin-left: 10px;
+        font-style: italic;
+        font-size: 120%;
+    }
+    
+    .kolom p {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        font-style: bold;
+        font-size: 90%;
+    }
+
+    .tulis H2 {
+        color: white;
+        font-style: italic;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 120%;
+    }
+
+    .foot1 {
+    	width: 50%;
+    	margin-bottom: 28px;
+	}
+}
+
+
+
+

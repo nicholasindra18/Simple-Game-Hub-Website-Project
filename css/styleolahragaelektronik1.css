@@ -1,0 +1,501 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;#5C5C5C
+}
+
+.kepala {
+    padding: 1px 0 1px 0;
+    background-color: #202125;
+}
+
+.container {
+    display: flex;
+    width: 85%;
+    margin-left: 10px;
+    line-height: 55px;
+}
+
+
+nav{
+    height: 70px;
+    background: #393939;
+}
+
+nav ul{
+    float: right;
+    margin-right: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    color: white;
+    display: block;
+    line-height: 70px;
+    font-size: 20px;
+    padding: 0 15px 0 15px;
+}
+
+nav ul li a:hover {
+    color: #C0C302;
+}
+
+nav ul ul{
+    position: absolute;
+    border-top: 2px solid #FFC7C7;
+    opacity: 0;
+}
+
+nav ul li:hover > ul{
+    top: 125px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+nav ul ul li{
+    width: 130px;
+    position: relative;
+    display: list-item;
+}
+
+nav ul ul li a{
+    line-height: 55px;
+}
+
+/* DES1 */
+
+.back {
+    background: #342F2F;
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 50px 0px 50px 0px;
+    border-radius: 20px;
+    margin-bottom: 150px
+}
+
+.judul {
+    background: #342F2F;
+}
+
+.judul p {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.judul h2 {
+    font-size: 65px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+.tanggal {
+    background-color: #D9D9D9;
+    margin-top: 100px;
+    width: 380px;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.tanggal h2 {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+.penyatu {
+    display: flex;
+}
+
+.gambar img {
+    margin-top: 50px;
+    width: 400px;
+    height: 500px;
+    margin-left: 200px;
+}
+
+.des1 {
+    margin-left: 150px;
+    background-color: #D9D9D9;
+    width: 500px;
+    height: 75px;
+    margin-top: 50px;
+    padding: 10px 0 0 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 10px solid black;
+}
+
+.des1 h2 {
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+}
+
+.des1 p {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+.des2 {
+    margin-left: 150px;
+    margin-bottom: 50px;
+    background-color: #D9D9D9;
+    width: 500px;
+    height: 300px;
+    padding: 10px 0 0 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.des2 h2 {
+    font-size: 20px;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.des2 p {
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+.versus h2 {
+    font-size: 65px;
+    color: #fff;
+    margin-top: 300px;
+    margin-left: 100px;
+    text-align: center;
+    font-style: italic;
+}
+
+.pic img {
+    margin-top: 50px;
+    width: 400px;
+    height: 500px;
+    margin-left: 150px;
+}
+
+.inf1 {
+    margin-left: 100px;
+    background-color: #D9D9D9;
+    width: 500px;
+    height: 75px;
+    margin-top: 50px;
+    padding: 10px 0 0 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 10px solid black;
+}
+
+.inf1 h2 {
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+}
+
+.inf1 p {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+.inf2 {
+    margin-left: 100px;
+    margin-bottom: 50px;
+    background-color: #D9D9D9;
+    width: 500px;
+    height: 300px;
+    padding: 10px 0 0 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.inf2 h2 {
+    font-size: 20px;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.inf2 p {
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+/* footer */
+
+.belakang {
+    margin-top: 150px;
+}
+
+.wrapp{
+	max-width: 1200px;
+	margin:auto;
+}
+
+.isi{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul{
+	list-style: none;
+}
+
+.footer{
+	background-color: #D9D9D9;
+    padding: 50px 0;
+}
+
+.foot1{
+   width: 25%;
+   padding: 0 50px;
+}
+
+.foot1 img {
+	width: 55%;
+}
+
+.foot1 ul li a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	margin-bottom: 5%;
+	font-size: 15px;
+}
+
+.foot1 ul li a:hover{
+	color: BLACK;
+    font-style: bold;
+    font-weight: bolder;
+}
+
+.foot1 .linkmedsos img{
+	height: 35px;
+	width: 35px;
+	display: inline-block;
+	margin:0 8px 8px 0;
+	text-align: center;
+	color: #ffffff;
+}
+
+.foot1 .linkmedsos a{
+	display: inline-block;
+}
+
+#copyright {
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    .kepala {
+        background-color: #202125;
+    }
+
+    nav ul {
+        margin: 0 auto;
+    }
+
+    nav ul li a {
+        font-size: 80%;
+        padding: 0 8px 0 8px;
+        color: white;
+    }
+
+    .back {
+        background: #342F2F;
+        width: 85%;
+        margin: 0 auto;
+        padding: 50px 0px 50px 0px;
+        border-radius: 20px;
+        margin-top: 10%;
+    }
+
+    .penyatu {
+        flex-direction: column ;
+    }
+
+    .judul p {
+        color: white;
+        text-align: center;
+        font-size: 150%;
+    }
+    
+    .judul h2 {
+        font-size: 220%;
+        color: #fff;
+        margin-bottom: 10px;
+        text-align: center;
+        font-style: italic;
+    }
+    
+    .tanggal {
+        background-color: #D9D9D9;
+        margin-top: 100px;
+        width: 55%;
+        border-radius: 15px;
+        margin: 0 auto;
+    }
+    
+    .tanggal h2 {
+        font-size: 120%;
+        color: black;
+        margin-bottom: 10px;
+        text-align: center;
+        font-style: italic;
+    }
+
+    .gambar img {
+        margin-top: 8%;
+        width: 55%;
+        height: 30%;
+        margin-left: 23%;
+    }
+    
+    .des1 {
+        margin-left: 15%;
+        background-color: #D9D9D9;
+        width: 70%;
+        height: 15%;
+        margin-top: 5%;
+        padding: 10px 0 0 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom: 10px solid black;
+    }
+    
+    .des1 h2 {
+        font-size: 200%;
+        font-style: italic;
+        text-align: center;
+    }
+    
+    .des1 p {
+        font-size: 120%;
+        font-style: italic;
+        text-align: center;
+    }
+    
+    .des2 {
+        margin-left: 15%;
+        margin-bottom: 1%;
+        background-color: #D9D9D9;
+        width: 70%;
+        height: 100%;
+        padding: 2% 0 5% 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    
+    .des2 h2 {
+        font-size: 120%;
+        font-style: italic;
+        text-align: left;
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+    
+    .des2 p {
+        font-size: 120%;
+        font-style: italic;
+        margin-left: 20px;
+    }
+
+    .versus h2 {
+        font-size: 400%;
+        color: #fff;
+        margin-top: 10%;
+        margin-left: 0%;
+        text-align: center;
+        font-style: italic;
+    }
+
+    .pic img {
+        margin-top: 8%;
+        width: 55%;
+        height: 30%;
+        margin-left: 23%;
+    }
+    
+    .inf1 {
+        margin-left: 15%;
+        background-color: #D9D9D9;
+        width: 70%;
+        height: 15%;
+        margin-top: 5%;
+        padding: 10px 0 0 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom: 10px solid black;
+    }
+    
+    .inf1 h2 {
+        font-size: 200%;
+        font-style: italic;
+        text-align: center;
+    }
+    
+    .inf1 p {
+        font-size: 120%;
+        font-style: italic;
+        text-align: center;
+    }
+    
+    .inf2 {
+        margin-left: 15%;
+        margin-bottom: 1%;
+        background-color: #D9D9D9;
+        width: 70%;
+        height: 100%;
+        padding: 2% 0 5% 0;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    
+    .inf2 h2 {
+        font-size: 120%;
+        font-style: italic;
+        text-align: left;
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+    
+    .inf2 p {
+        font-size: 120%;
+        font-style: italic;
+        margin-left: 20px;
+    }
+
+    .foot1 {
+    	width: 50%;
+    	margin-bottom: 28px;
+	}
+
+}
